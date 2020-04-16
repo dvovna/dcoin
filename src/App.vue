@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <BlockChain msg="Welcome to Your Vue.js App"/>
+    <router-link class="main-logo" to="/">d-coin</router-link>
+    <Navigation msg="Welcome to Your Vue.js App"/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import BlockChain from './components/BlockChain.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    BlockChain,
-  }
+    Navigation,
+  },
 }
 </script>
 
@@ -24,6 +25,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.main-logo {
+  text-transform: uppercase;
+  color: darkmagenta;
+  margin-bottom: 15px;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 30px;
+  text-underline: none;
 }
 
 h3 {
@@ -41,6 +52,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: black;
 }
 </style>

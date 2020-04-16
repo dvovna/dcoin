@@ -9,7 +9,7 @@
 
 <script>
   import Block from './Block';
-  import blockChainService from '../services/BlockChainService';
+  import blockChainService from '../../services/BlockChainService';
 
   export default {
     name: 'BlockChain',
@@ -21,6 +21,12 @@
     },
     data: () => ({
       chain: [],
-    })
+    }),
   }
 </script>
+
+<style scoped>
+  .blocks-list {
+    display: inline-block;
+  }
+</style>

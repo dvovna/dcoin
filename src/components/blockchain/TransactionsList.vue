@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Block transactions:</h3>
+    <h3>Transactions:</h3>
     <ul>
       <li v-for="transaction in transactions" v-bind:key="transaction.hash">
         <p>Date: <span>{{new Date(transaction.timestamp)}}</span></p>
