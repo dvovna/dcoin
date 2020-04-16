@@ -12,7 +12,7 @@
 
 <script>
   import _ from 'lodash';
-  import walletInfoService from '../../services/WalletInfoService';
+  import walletInfoService from '../../services/WalletService';
 
   export default {
     name: 'AccountInfo',

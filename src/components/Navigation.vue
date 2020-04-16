@@ -3,6 +3,7 @@
     <router-link to="/view-blockchain">View blockchain</router-link>
     <router-link to="/view-wallet-info">Check wallet</router-link>
     <router-link to="/make-transaction">Make a transaction</router-link>
+    <router-link to="/create-wallet">Generate wallet</router-link>
   </section>
 </template>
 
