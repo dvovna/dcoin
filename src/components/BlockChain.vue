@@ -16,10 +16,11 @@
     components: {
         Block,
     },
-    data: function () {
-      return {
-          chain: blockChainService.getChain()
-      };
-    }
+    async created() {
+        this.chain = await blockChainService.getChain();
+    },
+    data: () => ({
+      chain: [],
+    })
   }
 </script>

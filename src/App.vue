@@ -11,7 +11,7 @@ import BlockChain from './components/BlockChain.vue'
 export default {
   name: 'App',
   components: {
-    BlockChain
+    BlockChain,
   }
 }
 </script>
